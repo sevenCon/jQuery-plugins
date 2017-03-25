@@ -2,14 +2,36 @@
 <html>
 <head>
 	<title>jquery.alert</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		.confirm{
+			color: #C0C1C0;
+			font-size: 40px;
+			border: 4px #C3C5C3 solid;
+			font-family: "微软雅黑";
+			text-align: center;
+			height: 56px;
+			line-height: 56px;
+			width: 56px;
+			border-radius: 30px;
+		}
+
+	</style>
 </head>
 <body>
+	<input type="file" id="file">
+	<img src="./img/success.png" name="file">
+	<img src="./img/success.origin.png" name="file">
+	<p class="confirm">?</p>
 	<div id="alert">
 		<div class="alert-dialog">
-			<div class="alert-head" id="alert-head"></div>
+			<div class="alert-head" id="alert-head">
+				<i class="icon-ok"></i>
+			</div>
 			<div class="alert-body" id="alert-body">
-				<p class="alert-title"></p>
-				<p class="alert-context"></p>
+				<p class="alert-title">This is a title!</p>
+				<p class="alert-context">这里没有所谓的答案 ,请注意！</p>
 			</div>
 			<div class="alert-foot">
 				<button id="alert-ok">取消</button>
@@ -19,5 +41,24 @@
 	</div>
 	<script type="text/javascript" src='./js/jquery-3.1.1.js'></script>
 	<script type="text/javascript" src="js/jquery.alert.js"></script>
+	<script type="text/javascript">
+		function readBlobAsDataURL(blob, callback) {
+		    var a = new FileReader();
+		    a.onload = function(e) {callback(e.target.result);};
+		    a.readAsDataURL(blob);
+		}
+		//example:
+		// readBlobAsDataURL(blob, function (dataurl){
+		//     console.log(dataurl);
+		// });
+		$("#file").change(function(){
+			readBlobAsDataURL($("#file")[0].files[0], function (dataurl){
+			    console.log(dataurl);
+			    $("img").attr("src",dataurl);
+			    $("#dataUrl").html(dataurl);
+			});
+		})
+		
+	</script>
 </body>	
 </html>
