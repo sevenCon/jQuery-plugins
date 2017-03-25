@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SmartAjax防抖点击</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p>具体请打开console ，查看点击效果</p>
+	<button id="clickMe">Send Http AJax</button>
+	<button id="clickU">Send Http AJax</button>
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="smartAjax.js"></script>
+	<script type="text/javascript">
+		$("#clickMe").click(function(){
+			sendAjax(1);
+		});
+		$("#clickU").click(function(){
+			sendAjax(0);
+		});
+		
+		function sendAjax(param){
+			$.smartAjax({
+				url: "test.php",
+				type: "GET",
+				dataType: "json",
+				cache: false,
+				smartType: param,
+				success: function(res){
+					console.log("success");
+				},
+				error: function(err){
+					console.log("error");
+				}
+			});
+		}
+	</script>
+</body>
+</html>
