@@ -1,0 +1,20 @@
+html{
+	margin-top:2px;
+}
+/*   !error bar tips */
+.error-bar{
+	color: #fdfdfd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5000;
+    height: 40px;
+    text-align: center;
+    line-height: 24px;
+    background-color: #bf3c3c;
+}
+.error-bar .error-tips{
+	line-height: 40px;
+	margin-bottom:0;
+}

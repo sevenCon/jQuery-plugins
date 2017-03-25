@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My calender</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="calender-header">我的备忘录</h1>
+		<div class="anay-class-calender">
+			<div id="date-top-bar"  onselectstart="return false;" class="calender-yy-mm-oper">
+				<i class="last-month" onclick="Calender.initLastMonth()"></i>
+				<span class="yy-mm-text" onselectstart="return false;">
+					
+				</span>
+				<i class="next-month" onclick="Calender.initNextMonth()"></i>
+			</div>
+			<table id="calender" class="calender-table">
+				<thead>
+					<tr>
+						<th>星期日</th>
+						<th>星期一</th>
+						<th>星期二</th>
+						<th>星期三</th>
+						<th>星期四</th>
+						<th>星期五</th>
+						<th>星期六</th>
+					</tr>
+				</thead>
+				<tbody class="">
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/calender.js"></script>
+	<script type="text/javascript">
+		var remindEvents = [
+            {
+                time:"2017-3-2",
+                eventName:["07:30, 高三二班早读"]
+            },{
+                time:"2017-3-2",
+                eventName:["10:30, 高三二班考试"]
+            }
+        ];
+		var cld = new Calender("#date-top-bar","#calender",remindEvents);
+
+	</script>
+</body>
+</html>

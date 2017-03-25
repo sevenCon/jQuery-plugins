@@ -1,0 +1,123 @@
+body{
+  font-size: 12px;
+  font-family: 'PingFang SC','Helvetica Neue','Helvetica','Arial',sans-serif;
+  margin: 0;
+  padding: 0;
+}
+*{
+  box-sizing: border-box;
+}
+ul{
+  margin:0;
+}
+li{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+a,a:focus,a:hover,a:active{
+  text-decoration: none;
+}
+html{
+  background-color: aliceblue;
+}
+.anay-class-calender{
+    width: 980px;
+    margin: auto;
+}
+
+.calender-header{
+  text-align: center;
+  padding:20px;
+  font-size: 24px;
+  color:#6D6D6D;
+}
+.calender-yy-mm-oper {
+  text-align: center;
+  background-color: #75BFFF;
+  border: 1px solid #75BFFF;
+  line-height: 32px;
+  height: 32px;
+}
+.calender-yy-mm-oper .last-month {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(45deg);
+  /* font-weight: bolder; */
+  cursor: pointer;
+}
+.calender-yy-mm-oper .yy-mm-text {
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+}
+.calender-yy-mm-oper .next-month {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+.calender-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.calender-table th {
+  width: 160px;
+  font-weight: normal;
+  color: #585858;
+  height: 30px;
+  background-color: #B3DBFF;
+  border: 1px solid #75BFFF;
+}
+.calender-table td {
+  width: 160px;
+  height: 100px;
+  text-align: right;
+  border: 1px solid #75BFFF;
+  padding-right: 5px;
+  vertical-align: top;
+  color: #696969;
+}
+.calender-table .color-gray {
+  color: #b3b1b1;
+  border: none;
+}
+.calender-table .color-gray li:before {
+  background-color: #b3b1b1 !important;
+}
+.calender-table .event-list {
+    box-sizing: border-box;
+}
+.calender-table .event-list li {
+  color: inherit;
+
+}
+.event-list{
+  padding-left: 5px;
+  margin:0;
+}
+.event-list li p{
+  text-align: left;
+}
+
+.calender-table .event-list li p:before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #F380C5;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+
+.td-date-item{
+    margin: 5px;
+}

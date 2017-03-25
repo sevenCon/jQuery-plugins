@@ -1,0 +1,75 @@
+// over date
+.anay-class-calender {
+	padding:0 20px 20px;
+	.calender-yy-mm-oper{
+		text-align: center;
+		background-color: #ccc;
+		border: 1px solid #ccc;
+		line-height: 32px;
+		height: 32px;
+		.last-month{
+			display: inline-block;
+			width:8px;
+			height:8px;
+			border-left:1px solid #fff;
+			border-bottom:1px solid #fff;
+			transform: rotate(45deg);
+			cursor: pointer;
+		}
+		.yy-mm-text{
+			display: inline-block;
+		}
+		.next-month{
+			display: inline-block;
+			width:8px;
+			height:8px;
+			border-right:1px solid #fff;
+			border-bottom:1px solid #fff;
+			transform: rotate(-45deg);
+			cursor: pointer;
+		}
+	}
+	.calender-table{
+		width:100%;
+		th{
+			width:160px;
+			font-weight: normal;
+			height:30px;
+			background-color: #efeeee;
+			border:1px solid #ccc;
+		}
+		td{
+			width:160px;
+			height:100px;
+			text-align: right;
+			border:1px solid #ccc;
+			padding-right:5px;
+			vertical-align: top;
+			color:#696969;
+		}
+		.color-gray{
+			color:#b3b1b1;
+			border:none;
+			li:before{
+				background-color: #b3b1b1 !important;
+			}
+		}
+		.event-list{
+			margin:15px 0 0 15px;
+			li{
+				color:inherit;
+			}
+			li:before{
+				content: "";
+				width: 4px;
+				height: 4px;
+				border-radius: 10px;
+				display: inline-block;
+				vertical-align: middle;
+				background-color: #508ec1;
+				margin-bottom: 3px;
+			}
+		}
+	}
+}
+

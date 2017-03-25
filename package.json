@@ -3,5 +3,25 @@
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^2.1.2"
-  }
+  },
+  "name": "jqueryplugins",
+  "description": "jquery 插件集合",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "dependencies": {
+    
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sevenCon/jQuery-plugins.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sevenCon/jQuery-plugins/issues"
+  },
+  "homepage": "https://github.com/sevenCon/jQuery-plugins#readme"
 }
