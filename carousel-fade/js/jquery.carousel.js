@@ -15,7 +15,7 @@
 	
  */
 
-jQuery.fn.carousel = function(){
+jQuery.fn.carousel =  function(){
 	var hoverDot = this.find(".carousel-indicators");  // active
 	var banner = this.find(".slides"); 
 
@@ -110,4 +110,4 @@ jQuery.fn.carousel = function(){
 	});
 
 	startCarousel();
-}
+};
