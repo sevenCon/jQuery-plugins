@@ -38,9 +38,7 @@ center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, t
 }
 
 a, blockquote, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, img, input, label, li, ol, p, pre, span, table, ul {
-
     position: relative
-
 }
 
 p, h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal }
@@ -92,3 +90,6 @@ ul.default ul   { list-style-type: square }
 ol.default,
 ul.default ol,
 ol.default ol   { list-style-type: decimal }
+
+
+
